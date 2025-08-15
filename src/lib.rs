@@ -117,6 +117,9 @@ pub const TOSTOP: tcflag_t = 0x00400000;
 pub const IEXTEN: tcflag_t = 0x00000400;
 /* } c_lflag */
 
+/// Disable control character.
+pub const _POSIX_VDISABLE: cc_t = 0;
+
 #[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct Termios {
